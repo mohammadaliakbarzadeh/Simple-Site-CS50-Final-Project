@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.nav-link');
+        menuItem.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add("active");
+            }
+        });
+    });
+
+    </script>
+</head>
+<body class="page">
+    <div id="index">
+        <div class="flex-container">
+            <div class="logo">
+            </div>
+            <div class="menu">
+                <ul class="right-offset">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link">Features</a></li>
+                    <li><a href="donate.html" class="nav-link">Donate</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="/templates/index.html" class="nav-link">Team</a></li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button action="submit" id="orange-button"><a href="login.html">Log in</a></button>
+            </div>
+            <div class="social-icons">
+                <img src="photos/x.png" alt="Twitter" id="social">
+                <img src="photos/insta.png" alt="Instagram" id="social">
+                <img src="photos/linkedin.png" alt="Linked In" id="social">
+            </div>
+        </div>
+        <p style="margin-top: 100px; color: #FFA688;">OUR SERVICES FEATURES</p>
+        <hr style="width: 100px; border: 1px solid #FFA688; margin-top: 1px;">
+        <div class="triple2">
+            <div class="p1">
+                <div id="left-box">
+                    <div id="decor">
+                        <img src="photos/brush.png" alt="brush" id="feature-img">
+                        <p>Graphic Designing</p>
+                        <h6>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="p2">
+                <div id="middle-box">
+                    <div id="decor">
+                        <img src="photos/chrome.png" alt="chrome" id="feature-img">
+                        <p>Web Developement</p>
+                        <h6>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="p3">
+                <div id="right-box">
+                    <div id="decor">
+                        <img src="photos/instagram.png" alt="instagram" id="feature-img">
+                        <p>Social Media Marketing</p>
+                        <h6>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 600px; border: 1px solid #FFA688; margin-top: 60px;">
+    </div>
+</body>
+</html>

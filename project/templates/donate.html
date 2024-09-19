@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.nav-link');
+        menuItem.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add("active");
+            }
+        });
+    });
+
+    </script>
+</head>
+<body class="page">
+    <div id="index">
+        <div class="flex-container">
+            <div class="logo">
+            </div>
+            <div class="menu">
+                <ul class="right-offset">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link">Features</a></li>
+                    <li><a href="donate.html" class="nav-link">Donate</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html" class="nav-link">Team</a></li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button action="submit" id="orange-button"><a href="login.html">Log in</a></button>
+            </div>
+            <div class="social-icons">
+                <img src="photos/x.png" alt="Twitter" id="social">
+                <img src="photos/insta.png" alt="Instagram" id="social">
+                <img src="photos/linkedin.png" alt="Linked In" id="social">
+            </div>
+        </div>
+        <div class="donate-part">
+            <div id="donate-pic">
+                <img src="photos/donate.png" alt="robot" id="donate-robot">
+            </div>
+            <div id="donate-options">
+                <h1>Heaven<em>Robot</em></h1>
+                <h3>Welcome to heavenrobot donation, please fill out the form below. Hopefully it is blessed.</h3>
+                <label for="select-menu" style="font-family: Lato;font-size: 18px;">Choose a donation type</label>
+                <div class="custom-select">
+                    <select name="donation-type" id="select-menu">
+                        <option value="" disabled selected>Cost of donation</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Disaster_Relief">Disaster Relief</option>
+                        <option value="Education">Education</option>
+                        <option value="Social_Services">Social Services</option>
+                    </select>
+                </div>
+                <label for="radio-menu" style="font-family: Lato;font-size: 18px;">Choose a donation amount</label>
+                <form id="radio-menu">
+                    <div>
+                        <input type="radio" id="pay_1" name="amount" value="25">
+                        <label for="pay_1" id="donate_price">$25</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pay_2" name="amount" value="50">
+                        <label for="pay_2" id="donate_price">$50</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pay_3" name="amount" value="100">
+                        <label for="pay_3" id="donate_price">$100</label>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <div>Choose a donation frequency</div>
+                <br>
+                <form>
+                    <div class="radio-inline">
+                        <input type="radio" id="method_1" name="method" value="monthly">
+                        <label for="method_1" id="donate_method">Monthly</label>
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="method_2" name="method" value="one_time">
+                        <label for="method_2" id="donate_method">One time</label>
+                    </div>
+                </form>
+                <h6>Auctor ut gravida senectus sed imperdiet id. Enim mauris morbi suscipit tellus aliquam commodo iaculis tortor. Faucibus elit, convallis massa sed. </h6>
+                <div class="button-inline"><button type="submit" class="cancel"><a href="index.html"><b>Cancel</b></a></button></div>
+                <div class="button-inline"><button type="submit" class="pay"><b>Pay</b></button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

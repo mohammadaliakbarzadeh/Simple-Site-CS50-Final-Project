@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Shop</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.nav-link');
+        menuItem.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add("active");
+            }
+        });
+    });
+
+    </script>
+</head>
+<body class="page">
+    <div id="index">
+        <div class="flex-container">
+            <div class="logo">
+            </div>
+            <div class="menu">
+                <ul class="right-offset">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link">Features</a></li>
+                    <li><a href="donate.html" class="nav-link">Donate</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html" class="nav-link">Team</a></li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button action="submit" id="orange-button"><a href="login.html">Log in</a></button>
+            </div>
+            <div class="social-icons">
+                <img src="photos/x.png" alt="Twitter" id="social">
+                <img src="photos/insta.png" alt="Instagram" id="social">
+                <img src="photos/linkedin.png" alt="Linked In" id="social">
+            </div>
+        </div>
+        <div class="robot-part">
+            <div class="text-part">
+                <div id="free-part"></div>
+                <p class="robot-text-1">Give robots a second chance</p>
+                <p class="robot-text-2">We save 1 million robots from destruction every year and find a new home for them. Let's save the robots!</p>
+                <div id="free-part"><button action="submit" id="orange-button"><a href="donate.html">Get Started</a></button></div>
+            </div>
+            <img src="photos/robot.png" alt="Robot" class="robot">
+        </div>
+    </div>
+</body>
+</html>

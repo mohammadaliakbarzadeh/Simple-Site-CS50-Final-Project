@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('.nav-link');
+        menuItem.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add("active");
+            }
+        });
+    });
+
+    </script>
+</head>
+<body class="page">
+    <div id="index">
+        <div class="flex-container">
+            <div class="logo">
+            </div>
+            <div class="menu">
+                <ul class="right-offset">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="features.html" class="nav-link">Features</a></li>
+                    <li><a href="donate.html" class="nav-link">Donate</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="/templates/index.html" class="nav-link">Team</a></li>
+                </ul>
+            </div>
+            <div class="button-container">
+                <button action="submit" id="orange-button"><a href="login.html">Log in</a></button>
+            </div>
+            <div class="social-icons">
+                <img src="photos/x.png" alt="Twitter" id="social">
+                <img src="photos/insta.png" alt="Instagram" id="social">
+                <img src="photos/linkedin.png" alt="Linked In" id="social">
+            </div>
+        </div>
+        <div class="triple">
+            <div class="part1">
+                <hr width="2px" height="100px">
+                <img src="photos/star.png" alt="star">
+                <hr width="2px" height="100px">
+            </div>
+            <div class="part2">
+                <h3 style="font-size: 20px;">Hello, I am</h3>
+                <h2 style="margin-left: 10px; font-size: 40px; color: #FF713D;">MohammadAli Akbarzadeh</h2>
+                <h6>Lorem ipsum sit dolor amet..</h6>
+                <button type="submit" style="color: black; background-color: #FF713D;"><b>HIRE ME</b></button>
+                <button type="submit" style="color: #FF713D; background-color: #FCEDBB;"><b>KNOW MORE</b></button>
+            </div>
+            <div class="part3">
+                <img src="photos/hacker.png" alt="hacker pic" id="hacker-pic">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
